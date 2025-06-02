@@ -312,11 +312,7 @@ def transform_time_series_confirmed_deaths() -> tuple:
     (330327, 6)
     """
     ### BEGIN SOLUTION
-    time_series_confirmed, time_series_deaths = import_time_series_confirmed_deaths()
-    idVars = ["Province/State", "Country/Region" , "Lat", "Long"]
-    time_series_confirmed_long = pd.melt(time_series_confirmed, id_vars=idVars, var_name="Date", value_name="Confirmed")
-    time_series_deaths_long = pd.melt(time_series_deaths, id_vars=idVars, var_name="Date", value_name="Deaths")
-    return time_series_confirmed_long, time_series_deaths_long
+    
     ### END SOLUTION
 ```
 
